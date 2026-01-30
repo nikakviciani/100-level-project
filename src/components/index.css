@@ -1,0 +1,262 @@
+/* =====================
+   GLOBAL RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* =====================
+   ROOT VARIABLES
+===================== */
+:root {
+  --primary: #065f46;
+  --secondary: #000000;
+  --accent: #10b981;
+  --bg: #000000;
+  --text: #ffffff;
+  --error: #dc2626;
+  --radius: 10px;
+}
+
+/* =====================
+   BODY
+===================== */
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: var(--primary);
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.nav-left img.logo {
+  height: 50px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right a,
+.nav-right button {
+  margin-left: 16px;
+  background: none;
+  color: var(--text);
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.nav-right a:hover,
+.nav-right button:hover {
+  color: var(--accent);
+  transform: scale(1.05);
+}
+
+/* =====================
+   HAMBURGER
+===================== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text);
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* =====================
+   MAIN
+===================== */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  min-height: 70vh;
+}
+
+/* =====================
+   COURSES
+===================== */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.course-card {
+  background: var(--secondary);
+  padding: 20px;
+  border-radius: var(--radius);
+
+  /* ✅ კონტური */
+  border: 2px solid var(--accent);
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  border-color: var(--text);
+}
+
+.course-card h2 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  margin: 6px 0;
+}
+
+.course-card .price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.course-card .schedule {
+  color: #ccc;
+  font-style: italic;
+}
+
+.course-card .plan,
+.course-card .future {
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* =====================
+   FORMS
+===================== */
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  background: var(--secondary);
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+}
+
+form h1,
+form h2 {
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: #111;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  color: var(--text);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--text);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: var(--primary);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: var(--accent);
+  transform: scale(1.03);
+}
+
+.switch-page {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.switch-page span {
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--primary);
+  margin-top: 40px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    background: var(--primary);
+    padding: 10px;
+    border-radius: 0 0 var(--radius) var(--radius);
+  }
+
+  .nav-right.open {
+    display: flex;
+  }
+
+  .nav-right a,
+  .nav-right button {
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 10px;
+  }
+}

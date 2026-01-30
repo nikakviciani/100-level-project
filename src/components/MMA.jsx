@@ -1,0 +1,39 @@
+import React from "react";
+
+function MMA() {
+  return (
+    <div className="content">
+      <h1>GOA MMA Training</h1>
+
+      <p>
+        GOA MMA is a premier Mixed Martial Arts academy founded by Goal-Oriented Academy. 
+        Our mission is to help every student grow physically, mentally, and strategically. 
+        At GOA MMA, you can master a full range of MMA techniques, including striking, grappling, 
+        and self-defense, all under the guidance of professional trainers. 
+        We don’t just teach fighting – we train leaders who embrace challenges and unlock their full potential. 
+        Push your limits, build strength, and become your best self at GOA MMA!
+      </p>          <br />
+      <p>
+        GOA MMA არის MMA-ს პრემიერული აკადემია, რომელიც დაარსა Goal-Oriented Academy-მ. 
+        ჩვენი მიზანია თითოეულ სტუდენტს ფიზიკურად, გონებრივად და სტრატეგიულად განვითარებაში დაეხმაროს. 
+        GOA MMA-ში შეგიძლიათ სრულად მოიპოვოთ MMA ტექნიკები, მათ შორის striking, grappling და self-defense, 
+        პროფესიონალი ტრენერების ხელმძღვანელობით. 
+        ჩვენ არ ვასწავლით მხოლოდ ბრძოლას – ვამზადებთ ლიდერებს, რომლებიც წინაშე გამოწვევებს დგანან და აღმოაჩენენ სრულ პოტენციალს. 
+        გამოწვიე საკუთარი შესაძლებლობები, გამაგრდი და გახდი შენი საუკეთესო ვერსია GOA MMA-ში!
+      </p>
+          <br />
+      <p>
+        Whether you are a beginner or an experienced fighter, our programs are tailored to help you 
+        achieve your personal goals, improve fitness, and gain confidence. 
+        Join GOA MMA today and start your journey toward mastery, discipline, and self-improvement.
+      </p>
+      <p>          <br />
+        მიუხედავად იმისა, რომ ახალი ხარ თუ უკვე გამოცდილ მებრძოლი, ჩვენი პროგრამები შენს პირად მიზნებს დაემთხვევა, 
+        დაგეხმარება ფიზიკური ფორმის გაუმჯობესებაში და თავდაჯერებულობის გაზრდაში. 
+        შეუერთდი GOA MMA-ს დღეს და დაიწყე შენი გზა მცოდნეობაში, დისციპლინაში და თვითგანვითარებაში.
+      </p>
+    </div>
+  );
+}
+
+export default MMA;
